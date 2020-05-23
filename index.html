@@ -23,9 +23,64 @@
         </ul>
       </nav>
       <ul>
-	      <li><a href="#">Поиск</a></li>
-	      <li><a href="#">Вход в личный кабинет</a></li>
-	      <li><a href="#">Корзина</a></li>
+	      <li>
+	      	<a href="#">Поиск</a>
+	      	<div>
+	  				<form action="https://echo.htmlacademy.ru/" method="get">  		
+							<label for="search-request" class="visually-hidden">Строка поиска</label>  			
+							<input id="search-request" type="search" name="search" placeholder="Крем-брюле">
+							<button type="submit" class="visually-hidden">Найти</button>  			 			
+	  				</form>
+  				</div>
+	      </li>
+	      <li>
+	      	<a href="#">Вход в личный кабинет</a>
+	      	<div>
+			  		<form action="https://echo.htmlacademy.ru/" method="post">
+			  			<p>
+				  			<label for="credentials-login" class="visually-hidden">Логин</label>
+				  			<input id="credentials-login" type="email" name="login" placeholder="email@example.com" required="">
+				  		</p>
+				  		<p>
+								<label for="credentials-password" class="visually-hidden">Пароль</label>
+			  				<input id="credentials-password" type="password" name="password" placeholder="......" required="">
+			  			</p>
+			  			<button type="submit">Войти</button>
+			  			<ul>
+			  				<li><a href="#">Забыли пароль?</a></li>
+			  				<li><a href="#">Новая регистрация</a></li>
+			  			</ul>  			
+			  		</form>
+  				</div>
+	      </li>
+	      <li>
+	      	<a href="#">Корзина</a>
+	      	<div>
+			  		<table>
+			  			<caption class="visually-hidden">Список товаров</caption>
+							<tbody>
+								<tr>
+									<td><a href="#">Удалить товар</a></td>
+									<td><img src="img/photo-cart-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="" width="33" height="33"></td>
+									<td>Пломбир с апельсиновым джемом</td>
+									<td>1,5 кг х 200 руб.</td>
+									<td>300 руб.</td>
+								</tr>
+								<tr>
+									<td><a href="#">Удалить товар</a></td>
+									<td><img src="img/photo-cart-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="" width="33" height="33"></td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+									<td>1,5 кг х 300 руб.</td>
+									<td>450 руб.</td>
+								</tr>
+								<tr>
+									<td colspan="5">Итого: <span>750 руб.</span></td>
+								</tr>
+							</tbody>
+			  		</table>
+			  		<a href="#">Оформить заказ</a>
+  				</div>
+	      </li>
 	    </ul>
       <section>
       	<h2 class="visually-hidden">Контактная информация</h2>
@@ -162,36 +217,8 @@
   				<li><a href="#">Экологические стандарты</a></li>
   			</ul>
   		</section>
-		<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
+			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
   	</footer>
-  	<section>
-  		<h2 class="visually-hidden">Поиск по сайту</h2>
-  		<form action="https://echo.htmlacademy.ru/" method="get">
-  			<p>
-  				<label for="search-request" class="visually-hidden">Строка поиска</label>  			
-  				<input id="search-request" type="search" name="search" placeholder="Крем-брюле">
-  				<button type="submit" class="visually-hidden">Найти</button>
-  			</p>  			
-  		</form>
-  	</section>
-  	<section>
-  		<h2 class="visually-hidden">Вход в личный кабинет</h2>
-  		<form action="https://echo.htmlacademy.ru/" method="post">
-  			<p>
-	  			<label for="credentials-login" class="visually-hidden">Логин</label>
-	  			<input id="credentials-login" type="email" name="login" placeholder="email@example.com" required="">
-	  		</p>
-	  		<p>
-					<label for="credentials-password" class="visually-hidden">Пароль</label>
-  				<input id="credentials-password" type="password" name="password" placeholder="......" required="">
-  			</p>
-  			<button type="submit">Войти</button>
-  			<ul>
-  				<li><a href="#">Забыли пароль?</a></li>
-  				<li><a href="#">Новая регистрация</a></li>
-  			</ul>  			
-  		</form>
-  	</section>
   	<section>
   		<h2 class="visually-hidden">Форма обратной связи</h2>
   		<p>Мы обязательно вам ответим!</p>
@@ -209,31 +236,8 @@
   				<textarea id="client-question" name="question" placeholder="В свободной форме" rows="7" cols="50" required=""></textarea>
   			</p>
   			<button type="submit">Отправить</button>
+  			<button type="reset">Очистить форму и закрыть</button>
   		</form>
   	</section>
-  	<section>
-  		<h2 class="visually-hidden">Корзина</h2>
-  		<table>
-  			<caption class="visually-hidden">Список товаров</caption>
-				<tbody>
-					<tr>
-						<td><a href="#">Удалить товар</a></td>
-						<td><img src="img/photo-cart-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="" width="33" height="33"></td>
-						<td>Пломбир с апельсиновым джемом</td>
-						<td>1,5 кг х 200 руб.</td>
-						<td>300 руб.</td>
-					</tr>
-					<tr>
-						<td><a href="#">Удалить товар</a></td>
-						<td><img src="img/photo-cart-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="" width="33" height="33"></td>
-						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-						<td>1,5 кг х 300 руб.</td>
-						<td>450 руб.</td>
-					</tr>
-				</tbody>
-  		</table>
-  		<p>Итого: <span>750 руб.</span></p>
-  		<a href="#">Оформить заказ</a>
-  	</section>
-  </body>
+	</body>
 </html>
