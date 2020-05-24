@@ -26,10 +26,10 @@
         <li>
           <a href="#">Поиск</a>
           <div>
-            <form action="https://echo.htmlacademy.ru/" method="get">     
-              <label for="search-request" class="visually-hidden">Строка поиска</label>       
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search-request" class="visually-hidden">Строка поиска</label>
               <input id="search-request" type="search" name="search" placeholder="Крем-брюле">
-              <button type="submit" class="visually-hidden">Найти</button>              
+              <button type="submit" class="visually-hidden">Найти</button>
             </form>
           </div>
         </li>
@@ -96,7 +96,71 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <section>
-        <!-- Здесь будет форма с фильтрами -->
+        <h2 class="visually-hidden">Фильтр и сортировка каталога</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="sort-by">
+              <option value="popularity">по популярности</option>
+              <option value="price-min">по цене - минимум</option>
+              <option value="price-max">по цене - максимум</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 – 500 ₽</legend>
+            <div>
+              <button type="button">Ползунок 1</button>
+              <button type="button">Ползунок 2</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input id="filter-fat-0" type="radio" name="fat-percent" value="0%">
+                <label for="filter-fat-0">0%</label>
+              </li>
+              <li>
+                <input id="filter-fat-upto10" type="radio" name="fat-percent" value="upto10%" checked>
+                <label for="filter-fat-upto10">до 10%</label>
+              </li>
+              <li>
+                <input id="filter-fat-upto30" type="radio" name="fat-percent" value="upto30%">
+                <label for="filter-fat-upto30">до 30%</label>
+              </li>
+              <li>
+                <input id="filter-fat-morethan30" type="radio" name="fat-percent" value="morethan30">
+                <label for="filter-fat-morethan30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input id="filter-filler-chocolate" type="checkbox" name="filler-chocolate" checked>
+                <label for="filter-filler-chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input id="filter-filler-suger" type="checkbox" name="filler-sugar" checked>
+                <label for="filter-filler-suger">сахарные присыпки</label>
+              </li>
+              <li>
+                <input id="filter-filler-fruit" type="checkbox" name="filler-fruit">
+                <label for="filter-filler-fruit">фрукты</label>
+              </li>
+              <li>
+                <input id="filter-filler-syrop" type="checkbox" name="filler-syrop">
+                <label for="filter-filler-syrop">сиропы</label>
+              </li>
+              <li>
+                <input id="filter-filler-jam" type="checkbox" name="filler-jam">
+                <label for="filter-filler-jam">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Католог сливочного мороженного</h2>
@@ -107,6 +171,7 @@
               <p>310 ₽<span>/кг</span></p>
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -114,6 +179,7 @@
               <p>380 ₽<span>/кг</span></p>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
            <li>
             <a href="#">
@@ -121,6 +187,7 @@
               <p>355 ₽<span>/кг</span></p>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -128,6 +195,7 @@
               <p>415 ₽<span>/кг</span></p>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -135,6 +203,7 @@
               <p>380 ₽<span>/кг</span></p>
               <h3>Сливочное с брусничным джемом</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -142,6 +211,7 @@
               <p>410 ₽<span>/кг</span></p>
               <h3>Сливочно-черничное с цельными ягодами черники</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -149,13 +219,15 @@
               <p>315 ₽<span>/кг</span></p>
               <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
-          </li> 
+            <a href="#">Быстрый просмотр</a>
+          </li>
           <li>
             <a href="#">
               <img src="img/photo-slivochnoye-s-shokoladnoy-struzhkoy.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
               <p>320 ₽<span>/кг</span></p>
-              <h3>Сливочное с шоколадной стружкой</h3>
+             <h3>Сливочное с шоколадной стружкой</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -163,6 +235,7 @@
               <p>440 ₽<span>/кг</span></p>
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li> 
           <li>
             <a href="#">
@@ -170,6 +243,7 @@
               <p>435 ₽<span>/кг</span></p>
               <h3>Сливочноe с ментоловым сиропом</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -177,6 +251,7 @@
               <p>355 ₽<span>/кг</span></p>
               <h3>Сливочное с кусочками черного шоколада</h3>
             </a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li>
             <a href="#">
@@ -184,7 +259,8 @@
               <p>420 ₽<span>/кг</span></p>
               <h3>Сливочное с мятным сиропом</h3>
             </a>
-          </li>                                                             
+            <a href="#">Быстрый просмотр</a>
+          </li>
         </ul>
       </section>
       <section>
