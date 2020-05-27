@@ -47,11 +47,7 @@ img {
 	height: auto;
 }
 
-/*a {
-	text-decoration-color: rgba(255, 255, 255, 0.2);
-/*	color: var(--white-basic)
-}*/
-
+a,
 a:visited {
 	color: var(--white-basic)
 }
