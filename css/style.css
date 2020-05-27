@@ -32,8 +32,8 @@
 /* Global */
 body {
   min-width: 1200px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -47,9 +47,10 @@ img {
   height: auto;
 }
 
-a,
-a:visited {
-  color: var(--white-basic)
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -88,6 +89,7 @@ a:visited {
 
 .site-navigation a,
 .user-navigation a {
+  color: var(--white-basic);
   text-decoration-color: var(--grey-green-light);
 }
 
@@ -152,6 +154,7 @@ a:visited {
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
+  color: var(--white-basic);
   text-decoration-color: var(--grey-green-light);
 }
 
@@ -181,7 +184,7 @@ a:visited {
 
 .about-us {
   color: var(--grey-extra-dark);
-  background-color: var(--beige-basic); 
+  background-color: var(--beige-basic);
   background-image: url("../img/background-waffle.jpg");
   background-position: 0 0;
   background-repeat: repeat;
@@ -251,7 +254,7 @@ a:visited {
 }
 
 .subscribe-form input:focus {
-  border-color: : var(--blue-basic);
+  border-color: var(--blue-basic);
 }
 
 .button {
@@ -299,6 +302,7 @@ a:visited {
 }
 
 .icecream-url {
+  color: var(--white-basic);
   text-decoration-color: var(--grey-green-light);
 }
 
@@ -320,6 +324,7 @@ a:visited {
 }
 
 .main-footer a {
+  color: var(--white-basic);
   text-decoration-color: var(--grey-green-light);
 }
 
@@ -331,8 +336,6 @@ a:visited {
 }
 
 /* Social */
-
-
 /* About company */
 
 .about-company {
@@ -350,9 +353,3 @@ a:visited {
 .callback {
   display: none;
 }
-
-
-
-
-
-
