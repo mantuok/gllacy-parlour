@@ -100,10 +100,10 @@
       <h1 class="main-heading">Сливочное мороженое</h1>
       <section>
         <h2 class="visually-hidden">Фильтр и сортировка каталога</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+        <form class="filter-sorting" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sort-by">
+            <select class="sorting" name="sort-by">
               <option value="popularity">по популярности</option>
               <option value="price-min">по цене - минимум</option>
               <option value="price-max">по цене - максимум</option>
@@ -111,14 +111,14 @@
           </fieldset>
           <fieldset>
             <legend>Цена: 100 – 500 ₽</legend>
-            <div>
+            <div class="range filter">
               <button type="button">Ползунок 1</button>
               <button type="button">Ползунок 2</button>
             </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="filter-fat filter">
               <li>
                 <input id="filter-fat-0" type="radio" name="fat-percent" value="0%">
                 <label for="filter-fat-0">0%</label>
@@ -139,7 +139,7 @@
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="filter">
               <li>
                 <input id="filter-filler-chocolate" type="checkbox" name="filler-chocolate" checked>
                 <label for="filter-filler-chocolate">шоколадные</label>
@@ -162,7 +162,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Применить</button>
+          <button class="button-form" type="submit">Применить</button>
         </form>
       </section>
       <section>
@@ -268,14 +268,14 @@
       </section>
       <section>
         <h2 class="visually-hidden">Перейти на другие страницы</h2>
-        <ul>
-          <li><a>Назад</a></li>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">Вперед</a></li>
+        <ul class="pagination">
+          <li><a class="page-back">Назад</a></li>
+          <li><a class="page-number">1</a></li>
+          <li><a class="page-number" href="#">2</a></li>
+          <li><a class="page-number" href="#">3</a></li>
+          <li><a class="page-number" href="#">4</a></li>
+          <li><a class="page-number" href="#">5</a></li>
+          <li><a class="page-next" href="#">Вперед</a></li>
         </ul>
       </section>
     </main>

@@ -10,13 +10,16 @@
 
   --grey-blue: #8996a6;
   --grey-green-light: #aabbb1;
+  --grey-green-semi-light: #9db1a5;
   --grey-green: #849d8f;
   --grey-brown: #9d8b84;
   --grey-pink: #a9a693;
 
+  --white-dark: #fefefe;
   --white-basic: #ffffff;
 
   --pink-basic: #f8cac3;
+  --pnik-dark: #8c2041;
 
   --blue-basic: #5ea3ea;
 
@@ -27,6 +30,7 @@
 
   --beige-light: #f8f7f4;
   --beige-basic: #ede1c7;
+  --beige-dark: #794d2d;
 }
 
 /* Global */
@@ -180,6 +184,50 @@ img {
   font-weight: 700;
 }
 
+/* Slider */
+
+.slides {
+  list-style: none;
+}
+
+.slide-name {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+a.slide-button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+/* Promos */
+
+.promo-1 {
+  background-color: var(--pnik-dark);
+  background-image: url("../img/background-raspberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo-2 {
+  background-color: var(--beige-dark);
+  background-image: url("../img/background-chocolate.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo-heading {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promo-desciption {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /* About us */
 
 .about-us {
@@ -237,7 +285,7 @@ img {
   color: var(--grey-basic);
   background-color: var(--beige-light);
   background-image: url("../img/background-post.png");
-  background-image: 0 0;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
@@ -254,6 +302,8 @@ img {
 }
 
 .subscribe-form input:focus {
+  color: var(--grey-extra-dark);
+  font-weight: 700;
   border-color: var(--blue-basic);
 }
 
@@ -275,6 +325,77 @@ img {
 
 .button:active {
   background-color: var(--orange-extra-dark);
+}
+
+/* Map & Contact us */
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+.contact-us {
+  color: var(--grey-extra-dark);
+  background-color: var(--white-dark);
+}
+
+.contact-us h3,
+.contact-us p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contact-us .contact-us-address,
+.contact-us .contact-us-phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contact-us-phone {
+  color: var(--grey-extra-dark);
+  text-decoration: none;
+}
+
+/* Filter & Sorting */
+
+.filter-sorting {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter-sorting fieldset,
+.sorting {
+  border: none;
+}
+
+.sorting,
+.filter,
+.button-form {
+  line-height: 18px;
+  color: var(--white-basic);
+  background-color: var(--grey-green-semi-light);
+}
+
+.filter {
+  list-style: none;
+}
+
+.sorting:hover,
+.sorting:focus {
+  color: var(--grey-extra-dark);
+}
+
+.button-form {
+  border: 2px solid var(--white-basic);
+}
+
+.button-form:hover,
+.button-form:focus {
+  color: var(--grey-extra-dark);
+  background-color: var(--white-basic);
 }
 
 /* Catalog */
@@ -311,6 +432,33 @@ img {
 .icecream-url:active {
   color: var(--orange-light);
   text-decoration-color: var(--grey-pink);
+}
+
+/* Pagination */
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  color: var(--white-basic);
+  text-decoration: none;
+}
+
+.page-number:hover,
+.page-number:focus {
+  background-color: var(--grey-green-semi-light);
+}
+
+.page-number:active,
+.page-number:not([href]) {
+  color: var(--grey-extra-dark);
+  background-color: var(--white-basic);
+}
+
+.page-back:not([href]),
+.page-next:not([href]) {
+  color: var(--grey-green-semi-light);
 }
 
 /* Footer */
