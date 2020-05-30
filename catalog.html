@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Купить сливочное мороженое</title>
@@ -7,84 +7,87 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
-      <a href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип магазина Глэйси" width="154" height="64"></a>
-      <nav>
-        <ul class="site-navigation">
-          <li><a>Каталог</a>
-            <ul class="catalog-navigation">
-              <li><a href="#">Новинки</a></li>
-              <li><a>Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-      </nav>
-      <ul class="user-navigation">
-        <li>
-          <a href="#">Поиск</a>
-          <div class="search-popup">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search-request" class="visually-hidden">Строка поиска</label>
-              <input id="search-request" type="search" name="search" placeholder="Крем-брюле">
-              <button type="submit" class="visually-hidden">Найти</button>
-            </form>
-          </div>
-        </li>
-        <li>
-          <a href="#">Вход в личный кабинет</a>
-          <div class="login-popup">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <p>
-                <label for="credentials-login" class="visually-hidden">Логин</label>
-                <input id="credentials-login" type="email" name="login" placeholder="email@example.com" required="">
-              </p>
-              <p>
-                <label for="credentials-password" class="visually-hidden">Пароль</label>
-                <input id="credentials-password" type="password" name="password" placeholder="......" required="">
-              </p>
-              <button type="submit">Войти</button>
-              <ul>
-                <li><a href="#">Забыли пароль?</a></li>
-                <li><a href="#">Новая регистрация</a></li>
+  <body class="page-body">
+    <header class="main-header">
+      <a class="logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип магазина Глэйси" width="154" height="64"></a>
+      <section class="main-navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <nav>
+          <ul class="site-navigation">
+            <li><a>Каталог</a>
+              <ul class="catalog-navigation">
+                <li><a href="#">Новинки</a></li>
+                <li><a>Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
               </ul>
-            </form>
-          </div>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-          <div class="cart-popup">
-            <table>
-              <caption class="visually-hidden">Список товаров</caption>
-              <tbody>
-                <tr>
-                  <td><a href="#">Удалить товар</a></td>
-                  <td><img src="img/photo-cart-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="" width="33" height="33"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х 200 руб.</td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td><a href="#">Удалить товар</a></td>
-                  <td><img src="img/photo-cart-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="" width="33" height="33"></td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг х 300 руб.</td>
-                  <td>450 руб.</td>
-                </tr>
-                <tr>
-                  <td colspan="5">Итого: <span>750 руб.</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="#">Оформить заказ</a>
-          </div>
-        </li>
-      </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </nav>
+        <ul class="user-navigation">
+          <li>
+            <a class="search-button" href="#">Поиск</a>
+            <div class="search-popup">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <label for="search-request" class="visually-hidden">Строка поиска</label>
+                <input id="search-request" type="search" name="search" placeholder="Крем-брюле">
+                <button type="submit" class="visually-hidden">Найти</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <a class="login-button" href="#">Вход в личный кабинет</a>
+            <div class="login-popup">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <p>
+                  <label for="credentials-login" class="visually-hidden">Логин</label>
+                  <input id="credentials-login" type="email" name="login" placeholder="email@example.com" required="">
+                </p>
+                <p>
+                  <label for="credentials-password" class="visually-hidden">Пароль</label>
+                  <input id="credentials-password" type="password" name="password" placeholder="......" required="">
+                </p>
+                <button type="submit">Войти</button>
+                <ul>
+                  <li><a href="#">Забыли пароль?</a></li>
+                  <li><a href="#">Новая регистрация</a></li>
+                </ul>
+              </form>
+            </div>
+          </li>
+          <li>
+            <a class="cart-button" href="#">Корзина</a>
+            <div class="cart-popup">
+              <table>
+                <caption class="visually-hidden">Список товаров</caption>
+                <tbody>
+                  <tr>
+                    <td><a href="#">Удалить товар</a></td>
+                    <td><img src="img/photo-cart-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="" width="33" height="33"></td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х 200 руб.</td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Удалить товар</a></td>
+                    <td><img src="img/photo-cart-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="" width="33" height="33"></td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х 300 руб.</td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Итого: <span>750 руб.</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="working-hours">с 10 до 20, ежедневно</p>
@@ -270,7 +273,7 @@
         <h2 class="visually-hidden">Перейти на другие страницы</h2>
         <ul class="pagination">
           <li><a class="page-back">Назад</a></li>
-          <li><a class="page-number">1</a></li>
+          <li><a class="page-number active">1</a></li>
           <li><a class="page-number" href="#">2</a></li>
           <li><a class="page-number" href="#">3</a></li>
           <li><a class="page-number" href="#">4</a></li>
