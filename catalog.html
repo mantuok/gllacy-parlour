@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page-body container">
     <header class="main-header">
       <a class="logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип магазина Глэйси" width="154" height="64"></a>
       <section class="main-navigation">
@@ -115,8 +115,11 @@
           <fieldset>
             <legend>Цена: 100 – 500 ₽</legend>
             <div class="range filter">
-              <button type="button">Ползунок 1</button>
-              <button type="button">Ползунок 2</button>
+              <div class="range-pin range-pin-min" aria-label="Цена от"></div>
+              <div class="range-pin range-pin-max" aria-label="Цена до"></div>
+              <div class="range-scale">
+                <div class="range-bar"></div>
+              </div>
             </div>
           </fieldset>
           <fieldset>
@@ -142,7 +145,7 @@
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul class="filter">
+            <ul class="filter filter-filler">
               <li>
                 <input id="filter-filler-chocolate" type="checkbox" name="filler-chocolate" checked>
                 <label for="filter-filler-chocolate">шоколадные</label>
@@ -172,100 +175,100 @@
         <h2 class="visually-hidden">Католог сливочного мороженного</h2>
         <ul class="icecream-list">
           <li class="icecream-item">
-            <p class="icecream-price">310 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
               <h3 class="icecream-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">310 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">380 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochno-kofeynoye-s-kusochkami-shokolada.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochno-kofeynoye-s-kusochkami-shokolada.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
               <h3 class="icecream-name">Сливочно-кофейное с кусочками шоколада</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">380 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">355 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
               <h3 class="icecream-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">355 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">415 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-krem-bryule-s-karamelnoy-podlivkoy.jpg" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-krem-bryule-s-karamelnoy-podlivkoy.jpg" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="267" height="267">
               <h3 class="icecream-name">Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">415 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">380 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-s-brusnichnym-dzhemom.jpg" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-s-brusnichnym-dzhemom.jpg" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
               <h3 class="icecream-name">Сливочное с брусничным джемом</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">380 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">410 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochno-chernichnoye-s-tselnymi-yagodami-cherniki.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochno-chernichnoye-s-tselnymi-yagodami-cherniki.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267">
               <h3 class="icecream-name">Сливочно-черничное с цельными ягодами черники</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">410 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">315 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochno-limonnoye-s-karamelnoy-prisypkoy.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochno-limonnoye-s-karamelnoy-prisypkoy.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267">
               <h3 class="icecream-name">Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">315 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">320 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-s-shokoladnoy-struzhkoy.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-s-shokoladnoy-struzhkoy.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
              <h3 class="icecream-name">Сливочное с шоколадной стружкой</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">320 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">440 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochno-vanilnoye-s-kusochkami-shokolada.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochno-vanilnoye-s-kusochkami-shokolada.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267">
               <h3 class="icecream-name">Сливочно-ванильное с кусочками шоколада</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">440 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">435 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoe-s-mentolovym-siropom.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoe-s-mentolovym-siropom.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
               <h3 class="icecream-name">Сливочноe с ментоловым сиропом</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">435 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">355 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-s-kusochkami-chernogo-shokolada.jpg" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-s-kusochkami-chernogo-shokolada.jpg" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
               <h3 class="icecream-name">Сливочное с кусочками черного шоколада</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">355 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
           <li class="icecream-item">
-            <p class="icecream-price">420 ₽<span>/кг</span></p>
             <a class="icecream-url" href="#">
-              <img src="img/photo-slivochnoye-s-myatnym-siropom.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
+              <img class="icecream-image" src="img/photo-slivochnoye-s-myatnym-siropom.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
               <h3 class="icecream-name">Сливочное с мятным сиропом</h3>
             </a>
-            <a class="button" href="#">Быстрый просмотр</a>
+            <p class="icecream-price">420 ₽<span>/кг</span></p>
+            <a class="button catalog-button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -282,7 +285,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-list">
@@ -296,8 +299,8 @@
         <h2 class="visually-hidden">Информация о компании</h2>
         <ul class="about-company-list">
           <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </section>
