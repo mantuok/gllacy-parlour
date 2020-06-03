@@ -32,6 +32,15 @@
   --beige-light: #f8f7f4;
   --beige-basic: #ede1c7;
   --beige-dark: #794d2d;
+
+  --red-dark: #ac1000;
+
+  --brick-basic: #942718;
+
+  --transparent-black-7: rgba(0, 0, 0, 0.07);
+  --transparent-white-20: rgba(255, 255, 255, 0.2);
+  --transparent-red-dark-64: rgba(172, 16, 0, 0.64);
+  --transparent-scarlet-dark-76: rgba(160, 32, 11, 0.76);
 }
 
 /* Global */
@@ -285,8 +294,13 @@ img {
 }
 
 a.slide-button {
+  padding-top: 9px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
   font-size: 32px;
   line-height: 44px;
+  letter-spacing: 0.05em;
 }
 
 .slider input {
@@ -520,28 +534,46 @@ a.slide-button {
 }
 
 .button {
-  padding-top: 14px;
-  padding-right: 19px;
-  padding-bottom: 13px;
-  padding-left: 19px;
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-bottom: 16px;
+  padding-left: 22px;
   font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   text-align: center;
   color: var(--white-basic);
   vertical-align: middle;
-  background-color: var(--orange-extra-dark);
+  background: linear-gradient(180deg, var(--orange-basic) 0%, var(--orange-extra-dark) 100%);
   border: none;
   border-radius: 70px;
+  text-shadow: 0px 2px 5px var(--transparent-scarlet-dark-76);
+  box-shadow: 0px 2px 2px var(--transparent-red-dark-64);
   text-decoration: none;
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--orange-basic);
+  background:
+    linear-gradient(0deg, var(--transparent-white-20) 0%, var(--transparent-white-20) 100%),
+    linear-gradient(to bottom, var(--orange-basic) 0%, var(--orange-extra-dark) 100%);
   outline: none;
+  box-shadow: 0px 2px 2px var(--red-dark);
 }
 
 .button:active {
-  background-color: var(--orange-extra-dark);
+  background:
+    linear-gradient(0deg, var(--transparent-black-7) 0%, var(--transparent-black-7) 100%),
+    linear-gradient(180deg, var(--orange-basic) 0%, var(--orange-extra-dark) 100%);
+  box-shadow: inset 0px 2px 2px var(--brick-basic);
+}
+
+.subscribe-button {
+  padding-top: 10px;
+  padding-right: 19px;
+  padding-bottom: 10px;
+  padding-left: 19px;
 }
 
 /* Map & Contact us */
@@ -601,8 +633,10 @@ a.slide-button {
 
 .contact-us-button {
   align-self: center;
-  padding-right: 28px;
-  padding-left: 28px;
+  padding-top: 13px;
+  padding-right: 27px;
+  padding-bottom: 13px;
+  padding-left: 27px;
 }
 
 /* Filter & Sorting */
@@ -779,6 +813,13 @@ a.slide-button {
 .icecream-url:active {
   color: var(--orange-light);
   text-decoration-color: var(--grey-pink);
+}
+
+.catalog-button {
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
 }
 
 /* Pagination */
