@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body container">
-    <header class="main-header">
+  <body class="page-body">
+    <header class="main-header container">
       <a class="logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип магазина Глэйси" width="154" height="64"></a>
       <section class="main-navigation">
         <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -73,29 +73,35 @@
           </li>
         </ul>
       </section>
+      <section class="additional-navigation">
+        <h2 class="visually-hidden">Навигационная цепочка</h2>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Сливочное</a></li>
+        </ul>
+      </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="working-hours">с 10 до 20, ежедневно</p>
         <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
       </section>
     </header>
-    <main>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a>Сливочное</a></li>
-      </ul>
+    <main class="container">
       <h1 class="main-heading">Сливочное мороженое</h1>
       <section>
         <h2 class="visually-hidden">Фильтр и сортировка каталога</h2>
         <form class="filter-sorting" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select class="sorting" name="sort-by">
-              <option value="popularity">по популярности</option>
-              <option value="price-min">по цене - минимум</option>
-              <option value="price-max">по цене - максимум</option>
-            </select>
+            <div class="selectContainer">
+              <select class="sorting" name="sort-by">
+                <option value="popularity">по популярности</option>
+                <option value="price-min">сначала недорогие</option>
+                <option value="price-max">сначала дорогие</option>
+                <option value="price-max">по жирности</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цена: 100 – 500 ₽</legend>
@@ -111,19 +117,19 @@
             <legend>Жирность:</legend>
             <ul class="filter-fat filter">
               <li>
-                <input id="filter-fat-0" type="radio" name="fat-percent" value="0%">
+                <input class="filter-fat-radio visually-hidden" id="filter-fat-0" type="radio" name="fat-percent" value="0%">
                 <label for="filter-fat-0">0%</label>
               </li>
               <li>
-                <input id="filter-fat-upto10" type="radio" name="fat-percent" value="upto10%" checked>
+                <input class="filter-fat-radio visually-hidden" id="filter-fat-upto10" type="radio" name="fat-percent" value="upto10%" checked>
                 <label for="filter-fat-upto10">до 10%</label>
               </li>
               <li>
-                <input id="filter-fat-upto30" type="radio" name="fat-percent" value="upto30%">
+                <input class="filter-fat-radio visually-hidden" id="filter-fat-upto30" type="radio" name="fat-percent" value="upto30%">
                 <label for="filter-fat-upto30">до 30%</label>
               </li>
               <li>
-                <input id="filter-fat-morethan30" type="radio" name="fat-percent" value="morethan30">
+                <input class="filter-fat-radio visually-hidden" id="filter-fat-morethan30" type="radio" name="fat-percent" value="morethan30">
                 <label for="filter-fat-morethan30">выше 30%</label>
               </li>
             </ul>
@@ -132,23 +138,23 @@
             <legend>Наполнители:</legend>
             <ul class="filter filter-filler">
               <li>
-                <input id="filter-filler-chocolate" type="checkbox" name="filler-chocolate" checked>
+                <input class="filter-filler-checkbox visually-hidden" id="filter-filler-chocolate" type="checkbox" name="filler-chocolate" checked>
                 <label for="filter-filler-chocolate">шоколадные</label>
               </li>
               <li>
-                <input id="filter-filler-suger" type="checkbox" name="filler-sugar" checked>
+                <input class="filter-filler-checkbox visually-hidden" id="filter-filler-suger" type="checkbox" name="filler-sugar" checked>
                 <label for="filter-filler-suger">сахарные присыпки</label>
               </li>
               <li>
-                <input id="filter-filler-fruit" type="checkbox" name="filler-fruit">
+                <input class="filter-filler-checkbox visually-hidden" id="filter-filler-fruit" type="checkbox" name="filler-fruit">
                 <label for="filter-filler-fruit">фрукты</label>
               </li>
               <li>
-                <input id="filter-filler-syrop" type="checkbox" name="filler-syrop">
+                <input class="filter-filler-checkbox visually-hidden" id="filter-filler-syrop" type="checkbox" name="filler-syrop">
                 <label for="filter-filler-syrop">сиропы</label>
               </li>
               <li>
-                <input id="filter-filler-jam" type="checkbox" name="filler-jam">
+                <input class="filter-filler-checkbox visually-hidden" id="filter-filler-jam" type="checkbox" name="filler-jam">
                 <label for="filter-filler-jam">джемы</label>
               </li>
             </ul>
@@ -284,13 +290,13 @@
       <section>
         <h2 class="visually-hidden">Перейти на другие страницы</h2>
         <ul class="pagination">
-          <li><a class="page-back">Назад</a></li>
+          <li><a class="page-back"><span class="visually-hidden">Назад</span></a></li>
           <li><a class="page-number active">1</a></li>
           <li><a class="page-number" href="#">2</a></li>
           <li><a class="page-number" href="#">3</a></li>
           <li><a class="page-number" href="#">4</a></li>
           <li><a class="page-number" href="#">5</a></li>
-          <li><a class="page-next" href="#">Вперед</a></li>
+          <li><a class="page-next" href="#"><span class="visually-hidden">Вперед</span></a></li>
         </ul>
       </section>
     </main>
