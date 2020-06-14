@@ -297,7 +297,7 @@ a.full-cart-button {
 }
 
 .site-navigation a:not([href]) {
-  background-color: var(--grey-dust-light);
+  background-color: var(--pink-orange);
   color: var(--white-basic);
 }
 
@@ -318,7 +318,9 @@ a.full-cart-button {
   color: var(--grey-extra-dark);
 }
 
-.search {
+.search,
+.login,
+.cart {
   position: relative;
 }
 
@@ -387,8 +389,8 @@ a.full-cart-button {
 .login-popup {
   width: 277px;
   height: 214px;
-  right: 231px;
-  top: 65px;
+  right: 0px;
+  top: 39px;
   padding-top: 20px;
   padding-right: 17px;
   padding-bottom: 20px;
@@ -461,8 +463,8 @@ button.login-button:active {
 }
 
 .cart-popup {
-  position: absolute;
-  display: none;
+  right: 0px;
+  top: 39px;
   padding-top: 20px;
   padding-right: 14px;
   padding-bottom: 21px;
@@ -470,24 +472,21 @@ button.login-button:active {
   color: var(--grey-extra-dark);
 }
 
-.cart-empty {
+.empty-cart-popup {
   justify-content: center;
   align-items: center;
-  right: 125px;
-  top: 65px;
   width: 140px;
   height:70px;
 }
 
-.cart-full {
+.full-cart-popup {
   flex-direction: column;
-  right: 119px;
-  top: 65px;
 }
 
 .cart-table {
   align-self: stretch;
   display: table;
+  width: 510px;
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -526,11 +525,12 @@ button.login-button:active {
 
 .cart-ice-calculate,
 .cart-ice-sum {
-  padding-right: 26px;
+  padding-right: 14px;
   color: var(--black-basic);
 }
 
 .cart-ice-price {
+  width: 100%;
   color: var(--grey-semi-light);
 }
 
@@ -581,7 +581,8 @@ a.checkout-button:active {
 }
 
 .search:hover path,
-.login:hover path {
+.login:hover path,
+.cart-empty:hover path {
   fill: var(--grey-extra-dark);
 }
 
@@ -1123,9 +1124,13 @@ a.promo-button {
   z-index: -1;
 }
 
+.contact-us-wrapper {
+  position: relative;
+}
+
 .contact-us {
   position: absolute;
-  top: 62px;
+  top: -381px;
   right: 27px;
   display: flex;
   flex-direction: column;
@@ -1134,6 +1139,8 @@ a.promo-button {
   width: 303px;
   height: 306px;
   padding-top: 32px;
+  padding-right: 27px;
+  padding-bottom: 27px;
   padding-left: 25px;
   color: var(--grey-extra-dark);
   border-radius: 16px;
@@ -1159,7 +1166,6 @@ a.promo-button {
   color: var(--grey-extra-dark);
   text-decoration: none;
 }
-
 .contact-us-button {
   align-self: center;
   padding-top: 13px;
@@ -1209,7 +1215,7 @@ a.promo-button {
 
 .selectContainer {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   border-radius: 26px;
 }
 
@@ -1237,6 +1243,7 @@ a.promo-button {
 .sorting:hover,
 .sorting:focus {
   color: var(--grey-extra-dark);
+  outline: none;
 }
 
 .selectContainer:hover::before,
@@ -1558,6 +1565,7 @@ a.promo-button {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  margin-top: -54px;
   line-height: 18px;
 }
 
@@ -1600,6 +1608,7 @@ a.promo-button {
 .instagram-button:hover g {
   opacity: 1;
 }
+
 /* About company */
 
 .about-company-list {
