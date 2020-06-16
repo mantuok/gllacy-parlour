@@ -213,7 +213,7 @@
             <a href="tel:88124502525">8 812 450-25-25</a>
             <p>(с 10 до 20 ежедневно)</p>
           </div>
-          <a class="button contact-us-button" href="">Форма обратной связи</a>
+          <a class="button contact-us-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -260,25 +260,28 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-    <section class="callback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p class="callback-phrase">Мы обязательно вам ответим!</p>
-        <p>
-          <label for="client-name" class="visually-hidden">Имя Фамилия</label>
-          <input class="callback-name" id="client-name" type="text" name="name" placeholder="Имя Фамилия" required="">
-        </p>
-        <p>
-          <label for="client-email" class="visually-hidden">Адрес электронной почты</label>
-          <input class="callback-email" id="client-email" type="email" name="email-address" placeholder="email@example.com" required="">
-        </p>
-        <p>
-          <label for="client-question" class="visually-hidden">Ваш вопрос</label>
-          <textarea class="callback-message" id="client-question" name="question" placeholder="В свободной форме" rows="7" cols="50" required=""></textarea>
-        </p>
-        <button class="button callback-button" type="submit">Отправить</button>
-        <button class="reset-button" type="reset"><span class="visually-hidden">Очистить форму и закрыть</span></button>
-      </form>
-    </section>
+    <div class="modal">
+      <section class="callback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="callback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="callback-phrase">Мы обязательно вам ответим!</p>
+          <p>
+            <label for="client-name" class="visually-hidden">Имя Фамилия</label>
+            <input class="callback-name" id="client-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="client-email" class="visually-hidden">Адрес электронной почты</label>
+            <input class="callback-email" id="client-email" type="email" name="email-address" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="client-question" class="visually-hidden">Ваш вопрос</label>
+            <textarea class="callback-message" id="client-question" name="question" placeholder="В свободной форме" rows="7" cols="50"></textarea>
+          </p>
+          <button class="button callback-button" type="submit">Отправить</button>
+          <button class="reset-button" type="reset"><span class="visually-hidden">Очистить форму и закрыть</span></button>
+        </form>
+      </section>
+    </div>
+    <script src="js/callback-modal.js"></script>
   </body>
 </html>

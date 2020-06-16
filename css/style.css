@@ -48,6 +48,7 @@
   --brick-basic: #942718;
 
   --transparent-black-7: rgba(0, 0, 0, 0.07);
+  --transparent-black-30: rgba(0, 0, 0, 0.3);
   --transparent-black-40: rgba(0, 0, 0, 0.4);
 
   --transparent-white-20: rgba(255, 255, 255, 0.2);
@@ -1656,6 +1657,20 @@ a.promo-button {
 
 /* Callback modal */
 
+.modal {
+  display: none;
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent-black-30);
+  z-index: 2;
+}
+
+.modal-shown {
+  display: block;
+}
+
 .callback {
   display: none;
   position: fixed;
@@ -1669,7 +1684,15 @@ a.promo-button {
   border-radius: 6px;
   background-color: var(--beige-light);
   transform: translate(-50%, -50%);
-  z-index: 2;
+}
+
+.callback-shown {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.callback-insole-shown {
+  display: block;
 }
 
 .callback form {
@@ -1744,6 +1767,10 @@ a.promo-button {
   border-radius: 70px;
 }
 
+.callback-error {
+  animation: shake 0.6s;
+}
+
 .reset-button {
   position: absolute;
   top: 16px;
@@ -1754,4 +1781,40 @@ a.promo-button {
   background-image: url("../img/icon-X-big.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-200%) translateX(-50%);
+  }
+  70% {
+    transform: translateY(-45%) translateX(-50%);
+  }
+  90% {
+    transform: translateY(-55%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-50%) translateX(-51%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-50%) translateX(-49%);
+  }
 }
