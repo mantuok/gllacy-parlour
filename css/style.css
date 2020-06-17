@@ -1348,8 +1348,8 @@ a.promo-button {
   background-image: url("../img/icon-radiobutton-off.svg");
 }
 
-.filter-fat label:hover::before,
-.filter-fat label:focus::before {
+.filter-fat-radio:hover + label::before,
+.filter-fat-radio:focus + label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z' fill='%23fff' fill-opacity='1'/%3E%3C/svg%3E");
 }
 
@@ -1357,7 +1357,8 @@ a.promo-button {
   background-image: url("../img/icon-radiobutton-on.svg");
 }
 
-.filter-fat-radio:checked + label:hover::before {
+.filter-fat-radio:checked:hover + label::before,
+.filter-fat-radio:checked:focus + label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z' fill='%23fff' fill-opacity='1'/%3E%3Cpath d='M11 14.96a3.96 3.96 0 100-7.92 3.96 3.96 0 000 7.92z' fill='%23fff' fill-opacity='1'/%3E%3C/svg%3E");
 }
 
@@ -1372,7 +1373,8 @@ a.promo-button {
   background-image: url("../img/icon-checkbox-off.svg");
 }
 
-.filter-filler label:hover::before {
+.filter-filler-checkbox:hover + label::before,
+.filter-filler-checkbox:focus + label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z' fill='%23fff' fill-opacity='1'/%3E%3C/svg%3E");
 }
 
@@ -1381,7 +1383,8 @@ a.promo-button {
   background-image: url("../img/icon-checkbox-on.svg");
 }
 
-.filter-filler-checkbox:checked + label:hover::before {
+.filter-filler-checkbox:checked:hover + label::before,
+.filter-filler-checkbox:checked:focus + label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.686 6.513L4.09 8.965l7.135 6.774L24 3.626l-2.595-2.46-10.18 9.651-4.54-4.304z' fill='%23fff' fill-opacity='1'/%3E%3Cpath d='M19.259 17.391c0 .23-.097.452-.269.615a.943.943 0 01-.648.255H2.752a.943.943 0 01-.65-.255.847.847 0 01-.268-.615V2.61c0-.23.097-.452.269-.615a.943.943 0 01.648-.255H18.26L19.71.357A2.867 2.867 0 0018.341 0H2.752c-.73 0-1.43.275-1.946.764A2.542 2.542 0 000 2.61V17.39c0 .692.29 1.356.806 1.845A2.83 2.83 0 002.75 20h15.59c.73 0 1.43-.275 1.946-.764.516-.49.806-1.153.806-1.845V8.843l-1.834 1.74v6.808z' fill='%23fff' fill-opacity='1'/%3E%3C/svg%3E");
 }
 
@@ -1512,6 +1515,7 @@ a.promo-button {
   list-style: none;
   margin: 0;
   margin-top: 80px;
+  margin-bottom: 50px;
   padding: 0;
 }
 
