@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    </script>
   </head>
   <body class="page-body">
     <header class="main-header container">
@@ -16,7 +15,7 @@
         <nav>
           <ul class="site-navigation">
             <li class="catalog-navigation-button">
-              <a href="#">Каталог</a>
+              <a class="catalog-navigation-url" href="#">Каталог</a>
               <ul class="catalog-navigation">
                 <li><a class="catalog-special" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
@@ -86,27 +85,27 @@
         <h1 class="visually-hidden">Магазин Глэйси</h1>
         <section class="slider">
           <h2 class="visually-hidden">Лучшие комбинации мороженого</h2>
-            <input id="slider-button-1" type="radio" name="toggle" checked>
-            <input id="slider-button-2" type="radio" name="toggle">
-            <input id="slider-button-3" type="radio" name="toggle">
-            <div class="slider-buttons">
-              <label for="slider-button-1"></label>
-              <label for="slider-button-2"></label>
-              <label for="slider-button-3"></label>
-            </div>
+          <input id="slider-button-1" type="radio" name="toggle" checked>
+          <input id="slider-button-2" type="radio" name="toggle">
+          <input id="slider-button-3" type="radio" name="toggle">
+          <div class="slider-buttons">
+            <label for="slider-button-1"></label>
+            <label for="slider-button-2"></label>
+            <label for="slider-button-3"></label>
+          </div>
           <ul class="slides">
             <li class="slide slide-1">
-              <img class="slide-image" src="img/photo-krem-bryule-i-plombir-s-malinovym-dzhemom.png" alt="Мороженое крем-брюле и мороженое пломбир с малиновым джемом" width="1200" height="966">
+              <img class="slide-image" src="img/photo-krem-bryule-i-plombir-s-malinovym-dzhemom.png" alt="Мороженое крем-брюле и мороженое пломбир с малиновым джемом" width="1146" height="966">
               <p class="slide-name">Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
             <li class="slide slide-2">
-              <img class="slide-image" src="img/photo-shokoladnyy-plombir-i-limonnyy-sorbet.png" alt="Мороженое шоколадный пломбир и мороженое лимонный сорбет" width="1200" height="966">
+              <img class="slide-image" src="img/photo-shokoladnyy-plombir-i-limonnyy-sorbet.png" alt="Мороженое шоколадный пломбир и мороженое лимонный сорбет" width="1146" height="966">
               <p class="slide-name">Шоколадный пломбир и лимонный сорбет</p>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
             <li class="slide slide-3">
-              <img class="slide-image" src="img/photo-plombir-s-pomadkoy-i-klubnichnyy-shcherbet.png" alt="Мороженое пломбир с помадкой и мороженое клубничный щербет" width="1200" height="966">
+              <img class="slide-image" src="img/photo-plombir-s-pomadkoy-i-klubnichnyy-shcherbet.png" alt="Мороженое пломбир с помадкой и мороженое клубничный щербет" width="1146" height="966">
               <p class="slide-name">Пломбир с помадкой и клубничный щербет</p>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
@@ -116,7 +115,7 @@
           <h2 class="visually-hidden">Промо-акции магазина</h2>
           <div class="promo-1">
             <h3 class="promo-heading">Малинка даром!</h3>
-            <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового варенья бесплатно.</p>
+            <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button promo-button" href="#">Хочу варенье!</a>
           </div>
           <div class="promo-2">
@@ -131,9 +130,9 @@
             <li class="icecream-item icecream-item-hit">
               <a class="icecream-url" href="#">
                 <img class="icecream-image" src="img/photo-slivochnoye-s-apelsinovym-dzhemom-i-tsitrusovoy-struzhkoy.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                <div class="icecream-price">310 ₽<span>/кг</span></div>
                 <h3 class="icecream-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
-              <p class="icecream-price">310 ₽<span>/кг</span></p>
               <div class="catalog-button-wrapper">
                 <a class="button catalog-button" href="#">Быстрый просмотр</a>
               </div>
@@ -141,9 +140,9 @@
             <li class="icecream-item icecream-item-hit">
               <a class="icecream-url" href="#">
                 <img class="icecream-image" src="img/photo-slivochno-kofeynoye-s-kusochkami-shokolada.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
+                <div class="icecream-price">380 ₽<span>/кг</span></div>
                 <h3 class="icecream-name">Сливочно-кофейное с кусочками шоколада</h3>
               </a>
-              <p class="icecream-price">380 ₽<span>/кг</span></p>
               <div class="catalog-button-wrapper">
                 <a class="button catalog-button" href="#">Быстрый просмотр</a>
               </div>
@@ -151,9 +150,9 @@
             <li class="icecream-item icecream-item-hit">
               <a class="icecream-url" href="#">
                 <img class="icecream-image" src="img/photo-slivochno-klubnichnoye-s-prisypkoy-iz-belogo-shokolada.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
-                <h3 class="icecream-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <div class="icecream-price">355 ₽<span>/кг</span></div>
+                <h3 class="icecream-name">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</h3>
               </a>
-              <p class="icecream-price">355 ₽<span>/кг</span></p>
               <div class="catalog-button-wrapper">
                 <a class="button catalog-button" href="#">Быстрый просмотр</a>
               </div>
@@ -161,9 +160,9 @@
             <li class="icecream-item icecream-item-hit">
               <a class="icecream-url" href="#">
                 <img class="icecream-image" src="img/photo-slivochnoye-krem-bryule-s-karamelnoy-podlivkoy.jpg" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="267" height="267">
-                <h3 class="icecream-name">Сливочное крем-брюле с карамельной подливкой</h3>
+                <div class="icecream-price">415 ₽<span>/кг</span></div>
+                <h3 class="icecream-name">Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
               </a>
-              <p class="icecream-price">415 ₽<span>/кг</span></p>
               <div class="catalog-button-wrapper">
                 <a class="button catalog-button" href="#">Быстрый просмотр</a>
               </div>
@@ -176,14 +175,14 @@
           <ul class="our-advantages">
             <li class="advantage-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
             <li class="advantage-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="advantage-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li class="advantage-cold">Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            <li class="advantage-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+            <li class="advantage-cold">Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </section>
         <div class="additional-info">
           <article class="blog-news">
             <h2>Новое в нашем блоге</h2>
-            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <a href="#">10 способов сервировки фруктовых щербетов <br> к столу</a>
           </article>
           <section class="subscribe">
             <div class="subscribe-insole">
@@ -200,13 +199,13 @@
       </div>
       <section class="maps-contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <iframe class="map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;source=constructor" height="430"></iframe>
-        <a class="map-static" href="https://yandex.ru/maps/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;width=600&amp;height=430&amp;lang=ru_RU" alt="Карта как нас найти"/></a>
+        <iframe class="map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;source=constructor" height="430" title="Адрес: ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
+        <a class="map-static" href="https://yandex.ru/maps/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7c6080e2b41b8f9908d3ae30282e35c44c59d5b81c5440a9a7f4f17725a1c185&amp;width=600&amp;height=430&amp;lang=ru_RU" alt="Адрес: ул. Большая Конюшенная, 19/8, Санкт-Петербург"/></a>
       </section>
       <section class="contact-us-wrapper container">
         <div class="contact-us">
           <div class="contact-us-address">
-            <h3>Адрес главного офиса и офлайн-магазина:</h3>
+            <h3>Адрес главного офиса <br> и офлайн-магазина:</h3>
             <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
           </div>
           <div class="contact-us-phone">
@@ -251,7 +250,7 @@
       <section class="about-company">
         <h2 class="visually-hidden">Информация о компании</h2>
         <ul class="about-company-list">
-          <li><a href="#">Для поставщиков</a></li>
+          <li class="for-suppliers"><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
