@@ -547,7 +547,7 @@ a.cart-delete-item {
   background-image: url("../img/icon-x-small.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 .cart-ice-image {
@@ -683,6 +683,7 @@ a.checkout-button:active {
   background-image: url("../img/icon-breadcrumps-arrow.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .breadcrumbs a {
@@ -1080,7 +1081,6 @@ a.promo-button {
   padding-left: 6px;
   color: var(--grey-basic);
   background-color: var(--beige-light);
-  /* background-image: url("../img/background-post.png"); */
   background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 6px, #92cdff 7px, #92cdff 13px, #f8f7f4 14px, #f8f7f4 20px,  #fe9e90 21px, #fe9e90 27px, #f8f7f4 28px);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1550,6 +1550,7 @@ a.promo-button {
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0px 1px 3px var(--transparetn-grey-50);
+  vertical-align: middle;
 }
 
 .icecream-price span {
@@ -1657,6 +1658,7 @@ a.promo-button {
   color: var(--white-basic);
   border-radius: 50%;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .pagination li:first-child,
