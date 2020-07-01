@@ -117,7 +117,8 @@
         <form class="filter-sorting" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select class="sorting" name="sort-by">
+            <label for="sort-by" class="visually-hidden">Сортировать по:</label>
+            <select class="sorting" id="sort-by" name="sort-by">
               <option value="popularity">по популярности</option>
               <option value="price-min">сначала недорогие</option>
               <option value="price-max">сначала дорогие</option>
