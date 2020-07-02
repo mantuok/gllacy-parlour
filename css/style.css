@@ -35,6 +35,7 @@
   --black-basic: #000000;
 
   --orange-light: #ffbc9e;
+  --orange-semi-light: #e8a676;
   --orange-basic: #f26843;
   --orange-dark: #e84d37;
   --orange-extra-dark: #e74a35;
@@ -590,7 +591,7 @@ a.cart-delete-item {
   padding-left: 2px;
 }
 
-a.checkout-button {
+.full-cart-popup .checkout-button {
   margin-top: 0px;
   padding-top: 14px;
   padding-right: 16px;
@@ -602,13 +603,13 @@ a.checkout-button {
   box-shadow: 0px 1px 2px var(--transparent-red-dark-25);
 }
 
-a.checkout-button:hover,
-a.checkout-button:focus {
+.full-cart-popup .checkout-button:hover,
+.full-cart-popup .checkout-button:focus {
   color: var(--white-basic);
   box-shadow: 0px 1px 2px var(--red-dark);
 }
 
-a.checkout-button:active {
+.full-cart-popup .checkout-button:active {
   box-shadow: inset 0px 2px 2px var(--brick-basic);
 }
 
@@ -733,7 +734,7 @@ a.checkout-button:active {
 .main-grid {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 40px;
+  row-gap: 20px;
 }
 
 /* Heading */
@@ -753,6 +754,7 @@ a.checkout-button:active {
 .slides {
   margin: 0px;
   margin-top: -144px;
+  margin-bottom: 20px;
   padding: 0px;
 }
 
@@ -885,6 +887,7 @@ a.slide-button {
 .promos {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -895,7 +898,7 @@ a.slide-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: -2px;
+  margin-bottom: 18px;
   padding-top: 16px;
   padding-right: 22px;
   padding-left: 16px;
@@ -949,6 +952,7 @@ a.promo-button {
 .about-us {
   width: 100%;
   margin-top: 3px;
+  margin-bottom: 20px;
   padding-top: 24px;
   padding-right: 23px;
   padding-left: 20px;
@@ -1021,14 +1025,15 @@ a.promo-button {
 .additional-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 1146px;
-  margin-bottom: 14px;
 }
 
 .blog-news,
 .subscribe {
   width: 560px;
   min-height: 220px;
+  margin-bottom: 14px;
   border-radius: 16px;
 }
 
@@ -1492,6 +1497,14 @@ a.promo-button {
   background-image: url("../img/icon-checkbox-on.svg");
 }
 
+.filter-fat-radio:focus + label::before,
+.filter-filler-checkbox:focus + label::before  {
+  box-shadow:
+    0 0 1px 2px var(--orange-semi-light),
+    0 0 0 3px var(--white-basic);
+  border-radius: 2px;
+}
+
 .button-form {
   width: 143px;
   height: 34px;
@@ -1612,6 +1625,10 @@ a.promo-button {
   padding-left: 16px;
 }
 
+.popular-icecream-list {
+  margin-bottom: 20px;
+}
+
 .icecream-item-hit {
   position: relative;
 }
@@ -1619,7 +1636,7 @@ a.promo-button {
 .icecream-item-hit::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 6px;
   left: 13px;
   width: 61px;
   height: 61px;
