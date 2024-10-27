@@ -7,9 +7,6 @@ Welcome to the Ice Cream Parlour website project! This repository contains a sma
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 This project showcases a fictional ice cream parlour with a clean and modern website design. The goal is to provide an enjoyable browsing experience for customers looking to explore the menu, discover flavors, and learn about the parlour's story.
